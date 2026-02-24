@@ -1,4 +1,4 @@
-# 🧠 AI Infrastructure Orchestrator
+# 🎯 AI Infrastructure Orchestrator
 ### Software-Defined Infrastructure Control Plane with AI-Assisted Remediation
 
 > A unified framework to provision, govern, observe, and self-heal infrastructure across Kubernetes + Cloud IaC — with AI assisting (and safely gating) any manual interventions.
