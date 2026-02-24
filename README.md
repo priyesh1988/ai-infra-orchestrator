@@ -10,10 +10,7 @@
 Most infra stacks today are a *collection* of tools:
 - Terraform for provisioning
 - Helm/Argo CD for delivery
-- OPA/Kyverno for policy
 - Prometheus/Grafana for metrics
-- Loki for logs
-- Jaeger for traces
 - Kafka for events
 - Postgres for system state
 
