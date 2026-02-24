@@ -1,0 +1,23 @@
+replicaCount: 2
+
+image:
+  repository: ai-infra-orchestrator
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8000
+
+env:
+  APP_ENV: prod
+  DATABASE_URL: postgresql+psycopg://orchestrator:orchestrator@postgres:5432/orchestrator
+  KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+  KAFKA_TOPIC_EVENTS: infra.events
+  OPA_URL: http://opa:8181/v1/data/infra/allow
+  OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger-collector:4318
+  OPENAI_API_KEY: ""
+  OLLAMA_BASE_URL: http://ollama:11434
+  OLLAMA_MODEL: llama3
+
+resources: {}
