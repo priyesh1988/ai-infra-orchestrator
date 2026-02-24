@@ -174,4 +174,4 @@ helm upgrade --install ai-infra-orchestrator ./helm/ai-infra-orchestrator   --na
 ---
 
 ## License
-MIT
+This is layered architecture on MIT License
